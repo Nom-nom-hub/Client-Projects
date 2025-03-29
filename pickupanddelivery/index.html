@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meemaw's - You Buy It! We Bring It!</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Include SVG definitions -->
+    <div class="svg-container">
+        <!-- Content of images.svg will be included here -->
+    </div>
+
+    <header>
+        <div class="logo-container">
+            <div class="logo-curve">
+                <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+                    <path d="M0,0 L100,0 L100,100 L0,100 Z" fill="black"/>
+                    <path d="M-20,120 Q50,-20 120,50" stroke="#f5d742" stroke-width="15" fill="none"/>
+                </svg>
+            </div>
+            <div class="logo-text">
+                <h1>MEEMAW'S</h1>
+                <div class="tagline">YOU BUY IT! WE BRING IT!</div>
+                <div class="phone">239-555-1234</div>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#quote" class="quote-btn">Get a Quote</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-bg">
+            <!-- SVG background will be loaded here -->
+        </div>
+        <div class="hero-content">
+            <h2>Professional Pickup & Delivery Services</h2>
+            <p>Let us handle the heavy lifting for you!</p>
+            <a href="#contact" class="cta-button">Contact Us Today</a>
+        </div>
+    </section>
+
+    <!-- Add a wave divider after the hero section -->
+    <div class="wave-divider">
+        <svg preserveAspectRatio="none" viewBox="0 0 1440 100">
+            <use xlink:href="#wave-divider"></use>
+        </svg>
+    </div>
+
+    <section id="services" class="services">
+        <div class="bg-pattern">
+            <svg preserveAspectRatio="none" viewBox="0 0 100 100">
+                <use xlink:href="#bg-pattern"></use>
+            </svg>
+        </div>
+        <h2>Our Services</h2>
+        <div class="service-grid">
+            <div class="service-card">
+                <svg class="service-icon"><use xlink:href="#icon-truck"></use></svg>
+                <h3>Pickup and Delivery</h3>
+                <p>We'll pick up your purchases and deliver them right to your door.</p>
+            </div>
+            <div class="service-card">
+                <svg class="service-icon"><use xlink:href="#icon-furniture"></use></svg>
+                <h3>Furniture Transport</h3>
+                <p>Moving furniture? We've got you covered with our professional transport service.</p>
+            </div>
+            <div class="service-card">
+                <svg class="service-icon"><use xlink:href="#icon-appliance"></use></svg>
+                <h3>Bulk Appliance</h3>
+                <p>We specialize in moving large appliances safely and efficiently.</p>
+            </div>
+            <div class="service-card">
+                <svg class="service-icon"><use xlink:href="#icon-carpet"></use></svg>
+                <h3>Carpet Disposal</h3>
+                <p>Getting rid of old carpets? Let us handle the disposal for you.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Meemaw's</h2>
+        <p>Meemaw's is a family-owned business dedicated to providing reliable pickup and delivery services in the Pittsburgh area. With years of experience, we pride ourselves on our professional service and customer satisfaction.</p>
+        <p>Our team is trained to handle items with care, ensuring your purchases arrive safely at their destination.</p>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="bg-pattern">
+            <svg preserveAspectRatio="none" viewBox="0 0 100 100">
+                <use xlink:href="#bg-pattern"></use>
+            </svg>
+        </div>
+        <h2>Contact Us</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Get in Touch</h3>
+                <p><svg class="contact-icon"><use xlink:href="#icon-phone"></use></svg> 239-555-1234</p>
+                <p><svg class="contact-icon"><use xlink:href="#icon-email"></use></svg> info@meemaws.com</p>
+                <p><svg class="contact-icon"><use xlink:href="#icon-location"></use></svg> Cape Coral, FL</p>
+            </div>
+            <div class="contact-form">
+                <h3>Send us a Message</h3>
+                <form id="contactForm">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <input type="tel" placeholder="Your Phone">
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="quote" class="quote">
+        <h2>Request a Quote</h2>
+        <form id="quoteForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="service">Service Needed:</label>
+                <select id="service" required>
+                    <option value="">Select a Service</option>
+                    <option value="pickup">Pickup and Delivery</option>
+                    <option value="furniture">Furniture Transport</option>
+                    <option value="appliance">Bulk Appliance</option>
+                    <option value="carpet">Carpet Disposal</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="details">Details:</label>
+                <textarea id="details" required></textarea>
+            </div>
+            <button type="submit">Submit Quote Request</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h3>MEEMAW'S</h3>
+                <p>YOU BUY IT! WE BRING IT!</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#quote">Get a Quote</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p>Phone: 239-555-1234</p>
+                <p>Email: info@meemaws.com</p>
+                <p>Location: Cape Coral, FL</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Meemaw's Pickup and Delivery Services. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <div class="chat-widget">
+        <div class="chat-header">
+            <h4>Customer Service</h4>
+            <button class="chat-toggle">
+                <svg viewBox="0 0 24 24" width="24" height="24">
+                    <path fill="currentColor" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path>
+                </svg>
+            </button>
+        </div>
+        <div class="chat-body">
+            <div class="chat-messages">
+                <div class="message agent">
+                    <p>Hi there! How can we help you today? Choose from the options below.</p>
+                </div>
+            </div>
+            <div class="chat-questions">
+                <button class="question-btn" data-question="What areas do you service?">What areas do you service?</button>
+                <button class="question-btn" data-question="How much do you charge?">How much do you charge?</button>
+                <button class="question-btn" data-question="How far in advance should I book?">How far in advance should I book?</button>
+                <button class="question-btn" data-question="Do you offer same-day service?">Do you offer same-day service?</button>
+                <button class="question-btn" data-question="What's the largest item you can transport?">What's the largest item you can transport?</button>
+                <button class="question-btn custom-question">Contact Us Directly</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dark Mode Toggle Button -->
+    <div class="theme-toggle" id="themeToggle">
+        <i class="fas fa-moon"></i>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
